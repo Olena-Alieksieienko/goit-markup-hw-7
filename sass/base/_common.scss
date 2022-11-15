@@ -1,0 +1,16 @@
+.site-body {
+  background-color: var(--secondary-accent-color);
+  color: var(--title-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/*Прибирає крапки в li*/
+.list {
+  list-style: none;
+}
+
+/*Прибирає підкреслення посилань*/
+.link {
+  text-decoration: none;
+}

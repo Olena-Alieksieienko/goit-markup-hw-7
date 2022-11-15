@@ -1,0 +1,120 @@
+/* ------------ Хедер ------------  */
+
+.header-section {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border-header-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- Лого ---------- */
+
+.header-logo {
+  color: var(--header-logo-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.header-logo:focus {
+  color: var(--accent-color);
+}
+
+/* ---------- Навігація --------- */
+
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: 93px;
+  display: flex;
+  gap: 50px;
+}
+
+.header-link {
+  display: block;
+  position: relative;
+
+}
+
+.header-link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -33px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+
+
+.header-list .header-link {
+  color: var(--title-text-color);
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.header-list .header-link:hover,
+.header-list .header-link:focus {
+  color: var(--accent-color);
+  outline: 0;
+}
+
+.header-list .header-link.current {
+  color: var(--accent-color);
+}
+
+/* ---------- Mail Tel -----------*/
+.contacts {
+  margin-left: auto;
+  display: flex;
+  gap: 50px;
+}
+
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  vertical-align: middle;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+  outline: 0;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  vertical-align: middle;
+}
