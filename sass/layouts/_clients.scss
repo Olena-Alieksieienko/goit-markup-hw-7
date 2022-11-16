@@ -28,8 +28,7 @@
   height: 100%;
   border: 1px solid var(--fill-icon-color);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
 
   transition-property: border-color, fill;
