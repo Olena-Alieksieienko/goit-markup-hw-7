@@ -15,11 +15,12 @@
 }
 
 .hero-title {
-  font-size: 44px;
-  line-height: 1.36;
+  @include font (44px, 1.36, 900, 0.06em);
+  // font-size: 44px;
+  // font-weight: 900;
+  // letter-spacing: 0.06em;
+  // line-height: 1.36;
   text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 0.06em;
   color: var(--secondary-accent-color);
   max-width: 696px;
   margin: 0 auto;
@@ -28,10 +29,11 @@
 .hero-button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font (16px, 1.88, 700, 0.06em);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
   margin-top: 30px;

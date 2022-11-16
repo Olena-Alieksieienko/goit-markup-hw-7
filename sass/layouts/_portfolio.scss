@@ -12,11 +12,12 @@
 .filter-button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font (16px, 1.62, 500, 0.03em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.62;
+  // letter-spacing: 0.03em;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   padding: 6px 22px;
@@ -71,10 +72,11 @@ transform: translateY(0);
   position: absolute;
   top: 0;
   padding: 63px 24px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include font (18px, 1.56, 400, 0.03em);
+  // font-weight: 400;
+  // font-size: 18px;
+  // line-height: 1.56;
+  // letter-spacing: 0.03em;
   color: var(--secondary-accent-color);
   background-color: rgba(33, 150, 243, 0.9);
   height: 100%;
@@ -90,17 +92,19 @@ transform: translateY(0);
 }
 
 .work {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
+  @include font (18px, calc(36 / 18), 700, 0.06em);
+  // font-weight: 700;
+  // font-size: 18px;
+  // line-height: calc(36 / 18);
+  // letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
 .filter-types {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
+  @include font (16px, 1.88, 400, 0.03em);
+  // font-weight: 400;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }

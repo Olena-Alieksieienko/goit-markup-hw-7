@@ -96,10 +96,11 @@ margin-bottom: 12px;
 }
 
 .inpul-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font (12px, 1.17, 400, 0.01em);
+  // font-weight: 400;
+  // font-size: 12px;
+  // line-height: 1.17;
+  // letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
 
@@ -119,10 +120,11 @@ resize: none;
 
 .modal-user-comment::placeholder {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include font (12px, 1.17, 400, 0.01em);
+  // font-weight: 400;
+  // font-size: 12px;
+  // line-height: 1.17;
+  // letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -139,9 +141,10 @@ resize: none;
 }
 
 .check-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font (14px, 1.71, 400, null);
+  // font-weight: 400;
+  // font-size: 14px;
+  // line-height: 1.71;
   color: var(--primary-text-color);
   @extend %align-list;
   justify-content: center;
@@ -187,12 +190,13 @@ border-bottom: 1px solid var(--accent-color) ;
 .modal-send-button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font (16px, 1.88, 700, 0.06em);
+  // font-weight: 700;
+  // font-size: 16px;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
   @extend %align-list;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
   margin: 0 auto;

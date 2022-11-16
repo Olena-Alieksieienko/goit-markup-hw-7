@@ -104,9 +104,9 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
@@ -236,9 +236,9 @@ img {
 }
 
 .inpul-label {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
+  font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
 }
@@ -259,45 +259,45 @@ img {
 
 .modal-user-comment::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
+  font-weight: 400;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-user-comment::-moz-placeholder {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
+  font-weight: 400;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-user-comment:-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
+  font-weight: 400;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-user-comment::-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
+  font-weight: 400;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-user-comment::placeholder {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
+  font-weight: 400;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -315,9 +315,9 @@ img {
 }
 
 .check-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  font-weight: 400;
   color: var(--primary-text-color);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -371,11 +371,11 @@ img {
 .modal-send-button {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
+  font-weight: 700;
   letter-spacing: 0.06em;
+  text-align: center;
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
   margin: 0 auto;
@@ -601,9 +601,9 @@ img {
 }
 
 .benefits-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
@@ -611,9 +611,9 @@ img {
 }
 
 .benefits-after-title {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -625,9 +625,9 @@ img {
 
 .about-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  font-weight: 700;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
@@ -648,9 +648,9 @@ img {
   bottom: 0;
   width: 370px;
   height: 70px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-accent-color);
   -webkit-box-pack: center;
@@ -680,30 +680,30 @@ img {
 }
 
 .employees-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
 
 .employees-name {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  font-weight: 500;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 10px;
   color: var(--title-text-color);
 }
 
 .position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  font-weight: 400;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 16px;
 }
@@ -778,9 +778,9 @@ img {
 }
 
 .clients-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  font-weight: 700;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;

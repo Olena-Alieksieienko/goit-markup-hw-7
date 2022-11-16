@@ -18,10 +18,11 @@
 .header-logo {
   color: var(--header-logo-text-color);
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font (26px, 1.19, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
 }
 
 .logo-accent {
@@ -35,10 +36,11 @@
 /* ---------- Навігація --------- */
 
 .header-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font (14px, 1.14, 500, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
   margin-left: 93px;
   display: flex;
   gap: 50px;
@@ -91,10 +93,11 @@
 
 .header-mail,
 .header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font (14px, 1.14, 500, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
   color: var(--primary-text-color);
   vertical-align: middle;
 
