@@ -1,31 +1,27 @@
 /* ------------ Хедер ------------  */
 
-.header-section {
+.header {
   padding: 24px 0;
   border-bottom: 1px solid var(--border-header-color);
 }
 
-.header-container {
-  @extend %align-list;;
+.header__container {
+  @extend %align-list;
 }
 
-.header-nav {
+.navigation {
   @extend %align-list;
 }
 
 /* ---------- Лого ---------- */
 
-.header-logo {
+.logo {
   color: var(--header-logo-text-color);
   font-family: 'Raleway', sans-serif;
   @include font (26px, 1.19, 700, 0.03em);
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
 }
 
-.logo-accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
@@ -35,24 +31,23 @@
 
 /* ---------- Навігація --------- */
 
-.header-list {
+.menu {
   @include font (14px, 1.14, 500, 0.02em);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
-  margin-left: 93px;
   display: flex;
   gap: 50px;
 }
 
-.header-link {
+.header__menu {
+  margin-left: 93px;
+}
+
+.menu__link {
   display: block;
   position: relative;
 
 }
 
-.header-link.current::after {
+.menu__link.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -66,7 +61,7 @@
 
 
 
-.header-list .header-link {
+.menu .menu__link {
   color: var(--title-text-color);
 
   transition-property: color;
@@ -74,30 +69,28 @@
   transition-timing-function: var(--transition-timing-function);
 }
 
-.header-list .header-link:hover,
-.header-list .header-link:focus {
+.menu .menu__link:hover,
+.menu .menu__link:focus {
   color: var(--accent-color);
   outline: 0;
 }
 
-.header-list .header-link.current {
+.menu .menu__link.current {
   color: var(--accent-color);
 }
 
 /* ---------- Mail Tel -----------*/
 .contacts {
-  margin-left: auto;
   display: flex;
   gap: 50px;
 }
+.header__contacts {
+  margin-left: auto;
+}
 
-.header-mail,
-.header-tel {
+.contacts__mail,
+.contacts__tel {
   @include font (14px, 1.14, 500, 0.02em);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
   color: var(--primary-text-color);
   vertical-align: middle;
 
@@ -106,15 +99,15 @@
   transition-timing-function: var(--transition-timing-function);
 }
 
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__tel:hover,
+.contacts__tel:focus {
   color: var(--accent-color);
   outline: 0;
 }
 
-.contact-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
   vertical-align: middle;
