@@ -20,10 +20,6 @@
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   @include font (26px, 1.19, 700, 0.03em);
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 
@@ -38,9 +34,6 @@
 .address-location {
   color: var(--secondary-accent-color);
   @include font (14px, 1.71, 400, null);
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.71;
   font-style: normal;
 
   transition-property: color;
@@ -51,9 +44,6 @@
 .footer .footer-mail,
 .footer .footer-tel {
   @include font (14px, 1.71, 400, null);
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 1.71;
   color: var(--footer-mail-tel-color);
 
   transition-property: color;
@@ -78,9 +68,6 @@
 .invitation-text {
   margin-bottom: 20px;
   @include font (14px, 1.14, 700, null);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -101,6 +88,11 @@
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+  background-color: var(--accent-color);
+  outline: 0;
+  }
 }
 
 .site-soc-item {
@@ -110,18 +102,11 @@
 
 .site-soc-icon {
   fill: var(--secondary-accent-color);
-}
-
-.site-soc-link:hover,
-.site-soc-link:focus {
-  background-color: var(--accent-color);
-  outline: 0;
-}
-
-.site-soc-link:hover .site-soc-icon,
-.site-soc-link:focus .site-soc-icon {
+  .site-soc-link:hover &,
+  .site-soc-link:focus & {
   fill: var(--secondary-accent-color);
   outline: 0;
+  }
 }
 
 .footer-third-block {
@@ -131,9 +116,6 @@
 .footer-subscription-title {
   margin-bottom: 20px;
   @include font (14px, 1.14, 700, null);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 1.14;
   text-transform: uppercase;
   }
 
@@ -150,18 +132,13 @@
   transition-property: border;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
-
-.footer-subscription-form-mail:focus {
+  &:focus {
   outline: none;
   border: 1px solid var(--accent-color);
-}
-
-.footer-subscription-form-mail::placeholder {
+  }
+  &::placeholder {
   @include font (16px, 1.25, null, 0.03em);
-  // font-size: 16px;
-  // line-height: 1.25;
-  // letter-spacing: 0.03em;
+  }
 }
 
 .subscription-button {

@@ -18,20 +18,12 @@
 
 .employees-title {
   @include font (36px, 1.17, 700, 0.03em);
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.17;
-  // letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
 
 .employees-name {
   @include font (16px, 1.19, 500, 0.03em);
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -39,10 +31,6 @@
 
 .position {
   @include font (16px, 1.19, 400, 0.03em);
-  // font-weight: 400;
-  // font-size: 16px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 16px;
@@ -76,6 +64,11 @@
   transition-property: background-color, fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+  background-color: var(--accent-color);
+  outline: 0;
+  }
 }
 
 .employees-soc-icon {
@@ -84,16 +77,9 @@
   transition-property: fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
-
-.employees-soc-link:hover,
-.employees-soc-link:focus {
-  background-color: var(--accent-color);
-  outline: 0;
-}
-
-.employees-soc-link:hover .employees-soc-icon,
-.employees-soc-link:focus .employees-soc-icon {
+  .employees-soc-link:hover &,
+  .employees-soc-link:focus & {
   fill: var(--secondary-accent-color);
   outline: 0;
+  }
 }

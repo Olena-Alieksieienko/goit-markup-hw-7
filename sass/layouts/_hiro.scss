@@ -16,10 +16,6 @@
 
 .hero-title {
   @include font (44px, 1.36, 900, 0.06em);
-  // font-size: 44px;
-  // font-weight: 900;
-  // letter-spacing: 0.06em;
-  // line-height: 1.36;
   text-transform: uppercase;
   color: var(--secondary-accent-color);
   max-width: 696px;
@@ -30,10 +26,6 @@
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   @include font (16px, 1.88, 700, 0.06em);
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 1.88;
-  // letter-spacing: 0.06em;
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
   margin-top: 30px;
@@ -43,17 +35,14 @@
   border-radius: 4px;
   padding: 10px 0;
 
-
-  /* transition: background-color var(--transition-duration) var(--transition-timing-function); */
-
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus { 
+    cursor: pointer;
+    background-color: var(--hover-btn-color);
+    outline: 0;
+  }
 }
 
-.hero-button:hover,
-.hero-button:focus { 
-  cursor: pointer;
-  background-color: var(--hover-btn-color);
-  outline: 0;
-}

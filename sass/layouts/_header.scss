@@ -19,15 +19,16 @@
   color: var(--header-logo-text-color);
   font-family: 'Raleway', sans-serif;
   @include font (26px, 1.19, 700, 0.03em);
+  &:focus {
+  color: var(--accent-color);
+  }
 }
 
 .logo__accent {
   color: var(--accent-color);
 }
 
-.header-logo:focus {
-  color: var(--accent-color);
-}
+
 
 /* ---------- Навігація --------- */
 
@@ -44,10 +45,7 @@
 .menu__link {
   display: block;
   position: relative;
-
-}
-
-.menu__link.current::after {
+  &.current::after {
   content: '';
   position: absolute;
   left: 0;
@@ -57,26 +55,22 @@
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
-
-
-
-.menu .menu__link {
-  color: var(--title-text-color);
-
-  transition-property: color;
+  }
+  .menu & {
+    color: var(--title-text-color);
+    transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
+  }
+  .menu &:hover,
+  .menu &:focus {
+    color: var(--accent-color);
+    outline: 0;
+  }
 
-.menu .menu__link:hover,
-.menu .menu__link:focus {
-  color: var(--accent-color);
-  outline: 0;
-}
-
-.menu .menu__link.current {
-  color: var(--accent-color);
+  .menu &.current {
+    color: var(--accent-color);
+  }
 }
 
 /* ---------- Mail Tel -----------*/

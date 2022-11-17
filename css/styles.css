@@ -902,7 +902,7 @@ margin-bottom: 12px;
   outline: none;
 }
 
-.inpul-label {
+.input-label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -910,7 +910,7 @@ margin-bottom: 12px;
   color: var(--primary-text-color);
 }
 
-.inpul-label {
+.input-label {
   display: block;
   margin-bottom: 4px;
 }

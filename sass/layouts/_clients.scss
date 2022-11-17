@@ -5,9 +5,6 @@
 
 .clients-title {
   @include font (36px, 1.17, 700, null);
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 1.17;
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 50px;
@@ -35,6 +32,11 @@
   transition-property: border-color, fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+  border-color: var(--accent-color);
+  outline: 0;
+  }
 }
 
 .cliens-icon {
@@ -43,16 +45,12 @@
   transition-property: fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  border-color: var(--accent-color);
-  outline: 0;
-}
-
-.clients-link:hover .cliens-icon,
-.clients-link:focus .cliens-icon {
+  .clients-link:hover &,
+  .clients-link:focus & {
   fill: var(--accent-color);
   outline: 0;
+  }
 }
+
+
+
