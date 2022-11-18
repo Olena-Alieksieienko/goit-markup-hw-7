@@ -46,7 +46,7 @@ img {
   width: 100%;
 }
 
-.site-soc-link, .clients-link, .employees-soc-link, .about-item-top-text, .benefits-container-image, .navigation, .header__container, .check-text, .modal-close {
+.clients-link, .about-item-top-text, .benefits-container-image, .navigation, .header__container, .social-link, .check-text, .modal-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,6 +384,40 @@ html {
   padding: 10px 52px;
 }
 
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: var(--transition-duration);
+          transition-duration: var(--transition-duration);
+  -webkit-transition-timing-function: var(--transition-timing-function);
+          transition-timing-function: var(--transition-timing-function);
+}
+.social-link:hover, .social-link:focus {
+  background-color: var(--accent-color);
+  outline: 0;
+}
+
 /* ------------ Хедер ------------  */
 .header {
   padding: 24px 0;
@@ -647,39 +681,8 @@ html {
   font-size: 0;
 }
 
-.employees-soc-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-}
-
-.employees-soc-item {
-  width: 44px;
-  height: 44px;
-}
-
 .employees-soc-link {
-  width: 100%;
-  height: 100%;
   background: var(--secondary-accent-color);
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition-property: background-color, fill;
-  transition-property: background-color, fill;
-  -webkit-transition-duration: var(--transition-duration);
-          transition-duration: var(--transition-duration);
-  -webkit-transition-timing-function: var(--transition-timing-function);
-          transition-timing-function: var(--transition-timing-function);
-}
-.employees-soc-link:hover, .employees-soc-link:focus {
-  background-color: var(--accent-color);
-  outline: 0;
 }
 
 .employees-soc-icon {
@@ -836,39 +839,8 @@ html {
   text-transform: uppercase;
 }
 
-.site-soc-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-}
-
 .site-soc-link {
-  width: 100%;
-  height: 100%;
   background: var(--site-soc-linc-bg-color);
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: var(--transition-duration);
-          transition-duration: var(--transition-duration);
-  -webkit-transition-timing-function: var(--transition-timing-function);
-          transition-timing-function: var(--transition-timing-function);
-}
-.site-soc-link:hover, .site-soc-link:focus {
-  background-color: var(--accent-color);
-  outline: 0;
-}
-
-.site-soc-item {
-  width: 44px;
-  height: 44px;
 }
 
 .site-soc-icon {

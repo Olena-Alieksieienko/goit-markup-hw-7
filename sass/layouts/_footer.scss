@@ -64,33 +64,8 @@
   text-transform: uppercase;
 }
 
-.site-soc-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
 .site-soc-link {
-  width: 100%;
-  height: 100%;
-  @extend %align-list;
   background: var(--site-soc-linc-bg-color);
-  border-radius: 50%;
-  justify-content: center;
-
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  &:hover,
-  &:focus {
-  background-color: var(--accent-color);
-  outline: 0;
-  }
-}
-
-.site-soc-item {
-  width: 44px;
-  height: 44px;
 }
 
 .site-soc-icon {
