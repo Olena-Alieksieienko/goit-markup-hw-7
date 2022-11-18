@@ -91,14 +91,11 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
-
-.contacts__mail:hover,
-.contacts__mail:focus,
-.contacts__tel:hover,
-.contacts__tel:focus {
-  color: var(--accent-color);
-  outline: 0;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: 0;
+  }
 }
 
 .contacts__icon {

@@ -8,9 +8,13 @@
   transition-property: opacity, visibility;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  &.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 }
 
-/* Стан коли модалка відкрита */
 .modal {
   width: 528px;
   min-height: 581px;
@@ -23,11 +27,9 @@
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-duration) var(--transition-timing-function);
-}
-
-/* Стан коли модалка закрита */
-.backdrop.is-hidden .modal {
+  .backdrop.is-hidden & {
   transform: translate(-50%, -50%) scale(0);
+}
 }
 
 .modal-close {
@@ -48,12 +50,6 @@
   &:hover {
   fill: var(--hover-btn-color);
 }
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .modal-title {
@@ -110,7 +106,6 @@ resize: none;
   color: rgba(117, 117, 117, 0.5);
 }
 }
-
 
 .modal-input-icon {
   position: absolute;
@@ -185,4 +180,3 @@ resize: none;
   outline: 0;
   }
 }
-
