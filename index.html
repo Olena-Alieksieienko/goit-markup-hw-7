@@ -62,59 +62,59 @@
     </header>
     <main>
     <!---------- ГЕРОЙ ---------->
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="hero-button main-button ">Замовити послугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button data-modal-open type="button" class="hero__button main-button ">Замовити послугу</button>
         </div>
       </section>
 
     <!---------- ПЕРЕВАГИ ---------->
-      <section class="benefits section">
+      <section class="benefits">
         <div class="container">
-          <h2 class="benefits-container-title visually-hidden">Наші переваги</h2>
-          <ul class="benefits-list list">
-            <li class="benefits-item">
-              <div class="benefits-container-image">
-                <svg class="benefits-image" width="70" height="70">
+          <h2 class="benefits__title visually-hidden">Наші переваги</h2>
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <div class="benefits__images">
+                <svg class="image" width="70" height="70">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits-title">Увага до деталей</h3>
-              <p class="benefits-after-title">
+              <h3 class="benefits__name">Увага до деталей</h3>
+              <p class="benefits__description">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-container-image">
-                <svg class="benefits-image" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__images">
+                <svg class="image" width="70" height="70">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits-title">Пунктуальність</h3>
-              <p class="benefits-after-title">
+              <h3 class="benefits__name">Пунктуальність</h3>
+              <p class="benefits__description">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-container-image">
-                <svg class="benefits-image" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__images">
+                <svg class="image" width="70" height="70">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits-title">Планування</h3>
-              <p class="benefits-after-title">
+              <h3 class="benefits__name">Планування</h3>
+              <p class="benefits__description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-container-image">
-                <svg class="benefits-image" width="70" height="70">
+            <li class="benefits__item">
+              <div class="benefits__images">
+                <svg class="image" width="70" height="70">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits-title">Сучасні технології</h3>
-              <p class="benefits-after-title">
+              <h3 class="benefits__name">Сучасні технології</h3>
+              <p class="benefits__description">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -123,14 +123,15 @@
       </section>
 
     <!---------- ФОТО, ЧИМ ЗАЙМАЄТЬСЯ КОМПАНІЯ ---------->
-      <section class="about section">
+      <section class="about">
         <div class="container">
-          <h2 class="about-title">Чим ми займаємося</h2>
-          <ul class="about-list list">
-            <li class="about-item">
-              <div class="about-item-text-wrap">
-                <p class="about-item-top-text">Десктопні додатки</p>
+          <h2 class="about__title">Чим ми займаємося</h2>
+          <ul class="about__list list">
+            <li class="about__item">
+              <div class="about__wrap">
+                <p class="about__top-text">Десктопні додатки</p>
                 <img
+                class="about__image"
                 src="./images/box1.jpg"
                 alt="Людина пише код за комп'ютером"
                 width="370"
@@ -139,9 +140,10 @@
               </div>
             </li>
             <li>
-              <div class="about-item-text-wrap">
-                <p class="about-item-top-text">Мобільні додатки</p>
+              <div class="about__wrap">
+                <p class="about__top-text">Мобільні додатки</p>
                 <img
+                class="about__image"
                 src="./images/box2.jpg"
                 alt="Людина із працює за ноутбуком"
                 width="370"
@@ -150,9 +152,10 @@
               </div>
             </li>
             <li>
-              <div class="about-item-text-wrap">
-                <p class="about-item-top-text">Дизайнерські рішення</p>
+              <div class="about__wrap">
+                <p class="about__top-text">Дизайнерські рішення</p>
                 <img
+                class="about__image"
                 src="./images/box3.jpg"
                 alt="Людина працює на планшеті"
                 width="370"
@@ -165,7 +168,7 @@
       </section>
 
     <!---------- ІНФОРМАЦІЯ ПРО СПІВРОБІТНИКІВ ---------->
-      <section class="employees section">
+      <section class="employees">
         <div class="container">
           <h2 class="employees-title">Наша команда</h2>
           <ul class="employees-list list">
@@ -382,67 +385,67 @@
         </div>
       </section>
     <!---------- ПОСТІЙНІ КЛІЄНТИ ---------->
-      <section class="clients-section">
+      <section class="clients">
         <div class="container">
-          <h2 class="clients-title">Постійні клієнти</h2>
-          <ul class="clients-list list">
-            <li class="clients-item">
+          <h2 class="clients__title">Постійні клієнти</h2>
+          <ul class="clients__list list">
+            <li class="clients__item">
               <a
-                class="clients-link link"
+                class="clients__link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                ><svg class="cliens-icon" width="106" height="60">
+                ><svg class="cliens__icon" width="106" height="60">
                   <use href="./images/icons.svg#company1"></use></svg
               ></a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link link"
+                class="clients__link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-              ><svg class="cliens-icon" width="106" height="60">
+              ><svg class="cliens__icon" width="106" height="60">
                   <use href="./images/icons.svg#company2"></use></svg
               ></a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link link"
+                class="clients__link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-              ><svg class="cliens-icon" width="106" height="60">
+              ><svg class="cliens__icon" width="106" height="60">
                   <use href="./images/icons.svg#company3"></use></svg
               ></a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link link"
+                class="clients__link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-              ><svg class="cliens-icon" width="106" height="60">
+              ><svg class="cliens__icon" width="106" height="60">
                   <use href="./images/icons.svg#company4"></use></svg
               ></a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link link"
+                class="clients__link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-              ><svg class="cliens-icon" width="106" height="60">
+              ><svg class="cliens__icon" width="106" height="60">
                   <use href="./images/icons.svg#company5"></use></svg
               ></a>
             </li>
-            <li class="clients-item">
+            <li class="clients__item">
               <a
-                class="clients-link link"
+                class="clients__link link"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-              ><svg class="cliens-icon" width="106" height="60">
+              ><svg class="cliens__icon" width="106" height="60">
                   <use href="./images/icons.svg#company6"></use></svg
               ></a>
             </li>

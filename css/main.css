@@ -46,7 +46,7 @@ img {
   width: 100%;
 }
 
-.clients-link, .about-item-top-text, .benefits-container-image, .navigation, .header__container, .social-link, .check-text, .modal-close {
+.clients__link, .benefits__images, .navigation, .header__container, .social-link, .check-text, .modal-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +528,7 @@ html {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   font-size: 44px;
   line-height: 1.36;
   font-weight: 900;
@@ -539,12 +539,12 @@ html {
   margin: 0 auto;
 }
 
-.hero-button {
+.hero__button {
   width: 216px;
   margin-top: 30px;
   padding: 10px 0;
 }
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   cursor: pointer;
   background-color: var(--hover-btn-color);
   outline: 0;
@@ -554,17 +554,17 @@ html {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.benefits-list {
+.benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-.benefits-item {
+.benefits__item {
   -ms-flex-preferred-size: calc((100% - 30px) / 4);
       flex-basis: calc((100% - 30px) / 4);
 }
-.benefits-container-image {
+.benefits__images {
   width: 270px;
   height: 120px;
   -webkit-box-pack: center;
@@ -573,7 +573,7 @@ html {
   background-color: var(--secondary-bg-color);
   margin-bottom: 30px;
 }
-.benefits-title {
+.benefits__name {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
@@ -582,7 +582,7 @@ html {
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-.benefits-after-title {
+.benefits__description {
   font-size: 14px;
   line-height: 1.71;
   font-weight: 400;
@@ -594,36 +594,42 @@ html {
   text-align: center;
   padding-bottom: 94px;
 }
-.about-title {
+.about__title {
   color: var(--title-text-color);
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  font-weight: 700;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.about-list {
+.about__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-.about-item-text-wrap {
+.about__wrap {
   position: relative;
 }
-.about-item-top-text {
+.about__top-text {
   position: absolute;
   bottom: 0;
   width: 370px;
   height: 70px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  font-weight: 700;
   text-transform: uppercase;
   color: var(--secondary-accent-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -699,12 +705,11 @@ html {
   outline: 0;
 }
 
-.clients-section {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-.clients-title {
+.clients__title {
   font-size: 36px;
   line-height: 1.17;
   font-weight: 700;
@@ -712,21 +717,19 @@ html {
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
-
-.clients-list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
   list-style-type: none;
 }
-
-.clients-item {
+.clients__item {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   width: 100%;
   height: 100%;
   border: 1px solid var(--fill-icon-color);
@@ -741,12 +744,12 @@ html {
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
 }
-.clients-link:hover, .clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: var(--accent-color);
   outline: 0;
 }
 
-.cliens-icon {
+.cliens__icon {
   fill: var(--fill-icon-color);
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -755,7 +758,7 @@ html {
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
 }
-.clients-link:hover .cliens-icon, .clients-link:focus .cliens-icon {
+.clients__link:hover .cliens__icon, .clients__link:focus .cliens__icon {
   fill: var(--accent-color);
   outline: 0;
 }
