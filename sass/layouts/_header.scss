@@ -13,23 +13,6 @@
   @extend %align-list;
 }
 
-/* ---------- Лого ---------- */
-
-.logo {
-  color: var(--header-logo-text-color);
-  font-family: 'Raleway', sans-serif;
-  @include font (26px, 1.19, 700, 0.03em);
-  &:focus {
-  color: var(--accent-color);
-  }
-}
-
-.logo__accent {
-  color: var(--accent-color);
-}
-
-
-
 /* ---------- Навігація --------- */
 
 .menu {

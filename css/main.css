@@ -105,6 +105,20 @@ html {
   margin: 0 auto;
 }
 
+/* ---------- Лого ---------- */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo__accent {
+  color: var(--header-logo-text-color);
+}
+
 .main-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -395,23 +409,6 @@ html {
 .header {
   padding: 24px 0;
   border-bottom: 1px solid var(--border-header-color);
-}
-
-/* ---------- Лого ---------- */
-.logo {
-  color: var(--header-logo-text-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-}
-.logo:focus {
-  color: var(--accent-color);
-}
-
-.logo__accent {
-  color: var(--accent-color);
 }
 
 /* ---------- Навігація --------- */
@@ -810,6 +807,9 @@ html {
   color: var(--secondary-accent-color);
   padding: 60px 0;
 }
+.footer .logo__accent {
+  color: var(--secondary-accent-color);
+}
 
 .footer-position {
   display: -webkit-box;
@@ -820,25 +820,11 @@ html {
           align-items: baseline;
 }
 
-.footer .address-item {
+.address-item {
   display: block;
 }
-
-.footer .address-item + .address-item {
+.address-item + .address-item {
   margin-top: 9px;
-}
-
-.footer-logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.footer .footer-logo-accent {
-  color: var(--secondary-accent-color);
 }
 
 .footer-address {
@@ -858,9 +844,13 @@ html {
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
 }
+.address-location:hover, .address-location:focus {
+  color: var(--accent-color);
+  outline: 0;
+}
 
-.footer .footer-mail,
-.footer .footer-tel {
+.footer-mail,
+.footer-tel {
   font-size: 14px;
   line-height: 1.71;
   font-weight: 400;
@@ -872,13 +862,9 @@ html {
   -webkit-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
 }
-
-.footer .address-location:hover,
-.footer .address-location:focus,
-.footer .footer-mail:hover,
-.footer .footer-mail:focus,
-.footer .footer-tel:hover,
-.footer .footer-tel:focus {
+.footer-mail:hover, .footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
   color: var(--accent-color);
   outline: 0;
 }

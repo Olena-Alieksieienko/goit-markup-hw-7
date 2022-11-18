@@ -2,6 +2,10 @@
   background-color: var(--hero-bg-color);
   color: var(--secondary-accent-color);
   padding: 60px 0;
+  & .logo__accent {
+  color: var(--secondary-accent-color);
+}
+
 }
 
 .footer-position {
@@ -9,22 +13,11 @@
   align-items: baseline;
 }
 
-.footer .address-item {
+.address-item {
   display: block;
-}
-
-.footer .address-item + .address-item {
+  & + & {
   margin-top: 9px;
-}
-
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
-  @include font (26px, 1.19, 700, 0.03em);
-  color: var(--accent-color);
-}
-
-.footer .footer-logo-accent {
-  color: var(--secondary-accent-color);
+  }
 }
 
 .footer-address {
@@ -39,26 +32,26 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+  outline: 0;
+  }
 }
 
-.footer .footer-mail,
-.footer .footer-tel {
+.footer-mail,
+.footer-tel {
   @include font (14px, 1.71, 400, null);
   color: var(--footer-mail-tel-color);
 
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-}
-
-.footer .address-location:hover,
-.footer .address-location:focus,
-.footer .footer-mail:hover,
-.footer .footer-mail:focus,
-.footer .footer-tel:hover,
-.footer .footer-tel:focus {
-  color: var(--accent-color);
-  outline: 0;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: 0;
+  }
 }
 
 .footer-second-block {
