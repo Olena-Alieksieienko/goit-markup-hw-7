@@ -46,7 +46,7 @@ img {
   width: 100%;
 }
 
-.site-soc-link, .clients-link, .about-item-top-text, .benefits-container-image, .navigation, .header__container, .modal-send-button, .check-text, .modal-close {
+.site-soc-link, .clients-link, .about-item-top-text, .benefits-container-image, .navigation, .header__container, .check-text, .modal-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,7 +148,7 @@ html {
           transition-timing-function: var(--transition-timing-function);
   cursor: pointer;
 }
-.main-button:hover {
+.main-button:hover, .main-button:focus {
   background-color: var(--hover-btn-color);
 }
 
@@ -376,33 +376,12 @@ html {
 }
 
 .modal-send-button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.88;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: var(--secondary-accent-color);
-  background-color: var(--accent-color);
-  margin: 0 auto;
+  display: block;
   width: 200px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0px;
-  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   padding: 10px 52px;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: var(--transition-duration);
-          transition-duration: var(--transition-duration);
-  -webkit-transition-timing-function: var(--transition-timing-function);
-          transition-timing-function: var(--transition-timing-function);
-}
-.modal-send-button:hover, .modal-send-button:focus {
-  cursor: pointer;
-  background-color: var(--hover-btn-color);
-  outline: 0;
 }
 
 /* ------------ Хедер ------------  */
@@ -527,27 +506,9 @@ html {
 }
 
 .hero-button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.88;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--secondary-accent-color);
-  background-color: var(--accent-color);
-  margin-top: 30px;
   width: 216px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 0px;
-  border-radius: 4px;
+  margin-top: 30px;
   padding: 10px 0;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: var(--transition-duration);
-          transition-duration: var(--transition-duration);
-  -webkit-transition-timing-function: var(--transition-timing-function);
-          transition-timing-function: var(--transition-timing-function);
 }
 .hero-button:hover, .hero-button:focus {
   cursor: pointer;

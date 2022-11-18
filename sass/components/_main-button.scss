@@ -14,8 +14,15 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   cursor: pointer;
-    &:hover {
+    &:hover,
+    &:focus {
     background-color: var(--hover-btn-color);
   }
 }
+
+// .main-button__icon {
+//     margin-left: 10px;
+//     fill: var(--white-color);
+// }
+
 
